@@ -1,0 +1,97 @@
+{
+  "format": "custom",
+  "id": "settings",
+  "label": "settings",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "name": {
+        "type": "Text",
+        "config": {
+          "label": "Name",
+          "placeholder": ""
+        }
+      },
+      "nav_items": {
+        "type": "Group",
+        "config": {
+          "label": "Nav Items",
+          "repeat": true,
+          "fields": {
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "link",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "label": {
+              "type": "Text",
+              "config": {
+                "label": "Label",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "cta_link": {
+        "type": "Link",
+        "config": {
+          "label": "CTA Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "cta_lable": {
+        "type": "Text",
+        "config": {
+          "label": "CTA lable",
+          "placeholder": ""
+        }
+      },
+      "github_link": {
+        "type": "Link",
+        "config": {
+          "label": "Github link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "linkedin_link": {
+        "type": "Link",
+        "config": {
+          "label": "Linkedin link",
+          "placeholder": "",
+          "select": null
+        }
+      }
+    },
+    "SEO metadata": {
+      "metatitle": {
+        "type": "Text",
+        "config": {
+          "label": "Meta title",
+          "placeholder": ""
+        }
+      },
+      "metadescription": {
+        "type": "Text",
+        "config": {
+          "label": "Meta description",
+          "placeholder": ""
+        }
+      },
+      "og_image": {
+        "type": "Image",
+        "config": {
+          "label": "OG image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      }
+    }
+  }
+}
