@@ -4,9 +4,8 @@ import { ReactFragment } from 'react';
 import { Content, asImageSrc, isFilled } from '@prismicio/client';
 import Link from 'next/link';
 import { MdArrowOutward } from "react-icons/md";
-import { useRef, useState } from 'react';
+import { useRef} from 'react';
 import {gsap} from 'gsap';
-import TransitionEffect from './TransitionEffect';
 import NegativeCursorEffect from "./NegativeCursorEffect";
 
 
@@ -24,7 +23,6 @@ const component = useRef(null);
 const revealRef = useRef<HTMLDivElement>(null);
 const containerRef = useRef<HTMLDivElement>(null);
 const [currentItem, setCurrentItem] = React.useState<null | number>(null);
-const [contentVisible, setContentVisible] = useState(false);
 
 
 const contentImages = items.map((item) => {
