@@ -17,7 +17,7 @@ type ContentListProps = {
 }
 
 
-export default function contentList({items, contentType, viewMoreText, fallbackItemImage}: ContentListProps) {
+export default function ContentList({items, contentType, viewMoreText, fallbackItemImage}: ContentListProps) {
   
 const component = useRef(null);
 const revealRef = useRef<HTMLDivElement>(null);
